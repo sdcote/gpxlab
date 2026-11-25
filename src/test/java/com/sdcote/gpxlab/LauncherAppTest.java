@@ -23,7 +23,6 @@ class LauncherAppTest {
         command.action().run();
         assertTrue(called.get());
         assertNull(command.description());
-        assertEquals("hello World!", HelloWorld.execute());
     }
 
     @Test

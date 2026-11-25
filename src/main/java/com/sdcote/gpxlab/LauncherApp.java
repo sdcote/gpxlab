@@ -28,7 +28,8 @@ public class LauncherApp extends Application {
     static final String MENU_STYLE = "-fx-base: #3c3f41; -fx-background-color: #3c3f41; -fx-border-color: #4c5052; -fx-border-width: 0 0 1px 0; -fx-font-family: 'Segoe UI', sans-serif; -fx-font-size: 13px;";
     private static final String APP_TITLE = "GPXLab Launcher";
     private final List<LauncherCommand> commands = List.of(
-            new LauncherCommand("Hello World", "Display a greeting.", HelloWorld::display));
+            new LauncherCommand("Sanitize GPX", "Remove selected information from a GPX file.", SanitizeGPX::display),
+            new LauncherCommand("GPX Simplifier", "Simplify GPX tracks while preserving their centerline.", SimplifyGPX::display));
 
     public static void main(String[] args) {
         launch(args);

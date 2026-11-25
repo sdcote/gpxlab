@@ -18,6 +18,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>io.jenetics</groupId>
+            <artifactId>jpx</artifactId>
+            <version>4.0.1</version>
+        </dependency>
         <!-- Common utility classes -->
         <dependency>
             <groupId>coyote</groupId>
@@ -110,11 +115,6 @@
                     <release>25</release>
                 </configuration>
                 <dependencies>
-                    <dependency>
-                        <groupId>org.ow2.asm</groupId>
-                        <artifactId>asm</artifactId>
-                        <version>6.2.1</version>
-                    </dependency>
                 </dependencies>
             </plugin>
 
